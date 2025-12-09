@@ -1,40 +1,34 @@
+// lib/main.dart
+
 import 'package:flutter/material.dart';
+import 'package:skinmatch_flutter/input_page.dart'; 
 
-void main() => runApp(const SkinMatchApp());
 
-class SkinMatchApp extends StatelessWidget {
-  const SkinMatchApp({super.key});
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Skincare Recommender',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(title: const Text('SkinMatch Explore')),
-        body: ListView(
-          padding: const EdgeInsets.all(16),
-          children: const [
-            ProductCard(name: 'Niacinamide Serum', brand: 'The Ordinary', price: '150.000'),
-            ProductCard(name: 'Sunscreen SPF 50', brand: 'Biore', price: '55.000'),
-          ],
+      theme: ThemeData(
+        // ... (Kode theme Anda tetap) ...
+        primarySwatch: Colors.pink, 
+        primaryColor: const Color(0xFFF392A0), 
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          foregroundColor: Colors.black,
         ),
       ),
-    );
-  }
-}
-
-class ProductCard extends StatelessWidget {
-  final String name, brand, price;
-  const ProductCard({super.key, required this.name, required this.brand, required this.price});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: ListTile(
-        title: Text(name),
-        subtitle: Text(brand),
-        trailing: Text('Rp $price'),
-      ),
+      // UBAH: Gunakan nama kelas yang benar, yaitu InputPage
+      home: const InputPage(), 
     );
   }
 }
