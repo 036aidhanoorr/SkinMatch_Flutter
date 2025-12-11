@@ -182,7 +182,7 @@ class _WishlistPageState extends State<WishlistPage> {
         ...products.map((product) => Padding(
           padding: const EdgeInsets.only(bottom: 15.0),
           child: _buildProductListItem(product),
-        )).toList(),
+        )),
 
         const SizedBox(height: 20),
         Center(

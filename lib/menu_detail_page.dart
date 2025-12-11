@@ -55,7 +55,7 @@ class MenuDetailPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               const Text(
-                'Konten detail untuk menu ini akan ditampilkan di sini. Ini hanyalah halaman placeholder.',
+                'Detail informasi akan dimuat di sini setelah tersedia.',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),

@@ -25,7 +25,7 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
   String? _selectedSkinType;
-  List<String> _selectedSkinIssues = [];
+  final List<String> _selectedSkinIssues = [];
   double _selectedBudget = 150000.0;
 
   final List<String> _skinTypes = [

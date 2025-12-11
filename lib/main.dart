@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 // Import file login
 import 'login_page.dart'; 
 // Import MainNavigator yang baru dibuat
-import 'main_navigator.dart'; 
 
 void main() {
   runApp(const SkinMatchApp());

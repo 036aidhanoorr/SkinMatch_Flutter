@@ -327,7 +327,7 @@ class OutputPage extends StatelessWidget {
                   const SizedBox(height: 30),
 
                   // --- Daftar Langkah Rutinitas (Dynamic) ---
-                  ...routine.map((step) => _RoutineStepItem(step: step)).toList(),
+                  ...routine.map((step) => _RoutineStepItem(step: step)),
                   const SizedBox(height: 30),
 
                   // --- Tips Umum Skincare (Purple Card) ---
